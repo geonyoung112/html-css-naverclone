@@ -1,260 +1,174 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=1190"> <meta name="apple-mobile-web-app-title" content="NAVER"/> <meta name="robots" content="index,nofollow"/> <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/> <meta property="og:title" content="네이버"> <meta property="og:url" content="https://www.naver.com/"> <meta property="og:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png"> <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content=""> <meta name="twitter:url" content="https://www.naver.com/"> <meta name="twitter:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png"> <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/> 
     <title>네이버</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?1" />
+    <link rel="stylesheet" href="./naver.css">
   </head>
   <body>
     <header>
-      <h1>
-        <a href="http://wwww.naver.com">네이버</a>
-        <!--링크-->
-      </h1>
-      <div class="service_area">
-        <span
-          ><a
-            id="set_home_btn"
-            href="https://help.naver.com/support/welcomePage/guide.help"
-            >네이버를 시작페이지로</a
-          ></span
-        >
-        <span
-          ><a href="https://jr.naver.com/" class="link_jrnaver"
-            >쥬니어네이버</a
-          ></span
-        >
-        <span
-          ><a href="https://happybean.naver.com/" class="link_happybin"
-            >해피빈</a
-          ></span
-        >
+      <div class="links">
+        <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719&from=alias/" class="link_text">네이버를 시작페이지로</a>
+        <a href="https://jr.naver.com/" class="link_text">쥬니어네이버</a>
+        <a href="https://happybean.naver.com/" class="link_text">해피빈</a>
       </div>
-      <form>
-        <!--웹 접근성 향상을 위해 fieldset과 legend를 사용해주는 것이 좋다.-->
+          <a  href="https://wwww.naver.com"><img src="./2.png" class="img_logo"/></a>
+          <form>
         <fieldset>
           <legend class="blind">검색</legend>
-          <select id="where" name="where" title="검색 범위 선택" class="blind">
-            <option value="nexearch" selected="selected">통합검색</option>
-            <option value="post">블로그</option>
-            <option value="cafeblog">카페</option>
-            <option value="cafe">- 카페명</option>
-            <option value="article">- 카페글</option>
-            <option value="kin">지식iN</option>
-            <option value="news">뉴스</option>
-            <option value="web">사이트</option>
-            <option value="category">- 카테고리</option>
-            <option value="site">- 사이트</option>
-            <option value="movie">영화</option>
-            <option value="webkr">웹문서</option>
-            <option value="dic">사전</option>
-            <option value="100">- 백과사전</option>
-            <option value="endic">- 영어사전</option>
-            <option value="eedic">- 영영사전</option>
-            <option value="krdic">- 국어사전</option>
-            <option value="jpdic">- 일본어사전</option>
-            <option value="hanja">- 한자사전</option>
-            <option value="terms">- 용어사전</option>
-            <option value="book">책</option>
-            <option value="music">음악</option>
-            <option value="doc">전문자료</option>
-            <option value="shop">쇼핑</option>
-            <option value="local">지역</option>
-            <option value="video">동영상</option>
-            <option value="image">이미지</option>
-            <option value="mypc">내PC</option>
-            <optgroup label="스마트 파인더">
-              <option value="movie">영화</option>
-              <option value="auto">자동차</option>
-              <option value="game">게임</option>
-              <option value="health">건강</option>
-              <option value="people">인물</option>
-            </optgroup>
-            <optgroup label="네이버 랩">
-              <option>긍정부정검색</option>
-            </optgroup>
-          </select>
           <div class="search_box">
-            <input type="text" />
-            <button>검색</button>
-          </div>
+          <input />
+          <span class="search-keybord"></span>
+          <span class="search-history"></span>
+          <button >검색</button>
+        </div>
         </fieldset>
       </form>
-      <!-- unordered list, ordered list-->
       <nav>
-        <div class="group_nav">
-          <ul class="list_nav type_fix">
-            <li class="nav_item">
-              <a href="https://mail.naver.com/" class="nav" data-clk="svc.mail"
-                ><i class="ico_mail"></i>메일</a
-              >
-            </li>
-            <!--list item-->
-            <li class="nav_item">
-              <a
-                href="https://section.cafe.naver.com/"
-                class="nav"
-                data-clk="svc.cafe"
-                >카페</a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://section.blog.naver.com/"
-                class="nav"
-                data-clk="svc.blog"
-                >블로그</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://kin.naver.com/" class="nav" data-clk="svc.kin"
-                >지식iN</a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://shopping.naver.com/"
-                class="nav shop"
-                data-clk="svc.shopping"
-                ><span class="blind">쇼핑</span></a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://shoppinglive.naver.com/home"
-                class="nav shoplive"
-                data-clk="svc.shoppinglive"
-                ><span class="blind">쇼핑LIVE</span></a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://order.pay.naver.com/home"
-                class="nav"
-                data-clk="svc.pay"
-                >Pay</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://tv.naver.com/" class="nav" data-clk="svc.tvcast"
-                ><i class="ico_tv"></i>TV</a
-              >
-            </li>
+        <div class="nav_items">
+          <ul>
+            <li><a href="/">메일</a></li>
+            <li><a href="/">카페</a></li>
+            <li><a href="/">블로그</a></li>
+            <li><a href="/">지식iN</a></li>
+            <li><a href="/">쇼핑</a></li>
+            <li><a href="/">Pay</a></li>
+            <li><a href="/">TV</a></li>
+            <li><a href="/">사전</a></li>
+            <li><a href="/">뉴스</a></li>
+            <li><a href="/">증권</a></li>
+            <li><a href="/">부동산</a></li>
+            <li><a href="/">지도</a></li>
+            <li><a href="/">영화</a></li>
+            <li><a href="/">뮤직</a></li>
+            <li><a href="/">책</a></li>
+            <li><a href="/">웹툰</a></li>
+            <li><a href="/">더보기</a></li>
           </ul>
-
-          <ul class="list_nav NM_FAVORITE_LIST">
-            <li class="nav_item">
-              <a href="https://dict.naver.com/" class="nav" data-clk="svc.dic"
-                >사전</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://news.naver.com/" class="nav" data-clk="svc.news"
-                >뉴스</a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://finance.naver.com/"
-                class="nav"
-                data-clk="svc.stock"
-                >증권</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://land.naver.com/" class="nav" data-clk="svc.land"
-                >부동산</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://map.naver.com/" class="nav" data-clk="svc.map"
-                >지도</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://vibe.naver.com/" class="nav" data-clk="svc.vibe"
-                >VIBE</a
-              >
-            </li>
-            <li class="nav_item">
-              <a href="https://book.naver.com/" class="nav" data-clk="svc.book"
-                >책</a
-              >
-            </li>
-            <li class="nav_item">
-              <a
-                href="https://comic.naver.com/"
-                class="nav"
-                data-clk="svc.webtoon"
-                >웹툰</a
-              >
-            </li>
-            <li>더보기</li>
-          </ul>
-        </div>
-      </nav>
+          </nav>
     </header>
 
     <main>
-      <div id="newsstand">
-        <h2 class="blind">뉴스스탠드</h2>
-        <ul>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/up/2022/0208/nsd16121208.png" alt="아이뉴스24" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png" alt="연합뉴스TV" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/020.png" alt="동아일보" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png" alt="프레시안" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/021.png" alt="석간 문화일보" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/376.png" alt="JIJI.COM" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2019/logo/011.png" alt="서울경제" /></li>
-          <li>
-            <img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/941.png" alt="초이스경제" />
-          </li>
-          <li><img height="20" src="https://www.naver.com/#" alt="철강금속신문" /></li>
-          <li><img height="20" src="https://www.naver.com/" alt="diplomatique" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/up/2021/0728/nsd1110888.png" alt="소년한국일보" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/447.png" alt="Newsen" /></li>
-          <li>
-            <img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/924.png" alt="Inven" />
-          </li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/957.png" alt="S시사위크" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/345.png" alt="디자인정글" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/953.png" alt="DigitalToday" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/296.png" alt="코메디닷컴" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/075.png" alt="맥스무비" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/969.png" alt="매일노동뉴스" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/948.png" alt="한겨래21" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/up/2020/0928/nsd125033437.png" alt="한경비즈니스" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/356.png" alt="GameMeca" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/973.png" alt="비즈한국" /></li>
-          <li><img height="20" src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/902.png" alt="TV CHOSUN" /></li>
-        </ul>
+      <div id="main-centered" class="center-align">
+        <div id="main-first-block">
+          <section id="main-ad">
+            <h3 class="blind">광고</h3>
+          </section>
+          <section id="main-login">
+            <h3 class="blind">로그인</h3>
+            <div class="login-wrapper">
+              <span class="login-text">네이버를 더 안전하고 편리하게 이용하세요.</span>
+              <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                <span class="blind">NAVER 로그인</span>
+                <span class="login-image"></span>
+              </a>
+              <a
+                class="login-signup"
+                href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+              >회원가입</a>
+            </div>
+          </section>
+        </div>
+        <div id="main-second-block">
+          <div class="float-left">
+            <section id="main-ytn">
+              <h3>연합뉴스</h3>
+              <ol>
+                <li>美연준, 금리 0.5%p 인상 빅스텝…"두어번 더 0.5%p 인상 검토"</li>
+              </ol>
+            </section>
+            <section id="main-newsstand">
+              <h3>뉴스스탠드</h3>
+              <ul>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/016.png" alt="과학동아" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png" alt="한국일보" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/003.png" alt="osen" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png" alt="매일경제" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/008.png" alt="한국경제TV" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png" alt="과학동아" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/014.png" alt="한국일보" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/015.png" alt="osen" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/018.png" alt="매일경제" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/020.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/021.png" alt="한국경제TV" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/022.png" alt="과학동아" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/028.png" alt="한국일보" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/029.png" alt="osen" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/030.png" alt="매일경제" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/031.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/032.png" alt="한국경제TV" /></li>
+              </ul>
+            </section>
+          </div>
+          <div class="float-left">
+            <section id="main-weather">
+              <h3 class="blind">날씨</h3>
+            </section>
+            <section id="main-second-ad">
+              <h3 class="blind">광고</h3>
+            </section>
+          </div>
+        </div>
+        <div id="main-third-block">
+          <section id="main-category">
+            <h3 class="blind">주제별 보기</h3>
+            <div id="main-category-top">
+              <button id="subject-all">
+                <span class="blind">전체 주제 열기</span>
+                <span></span>
+              </button>
+              <div class="blind">
+                <div class="opacity left"></div>
+                <ul>
+                  <li>리빙</li>
+                  <li>푸드</li>
+                  <li>스포츠</li>
+                  <li>자동차</li>
+                  <li>패션뷰티</li>
+                  <li>부모i</li>
+                  <li class="highlight">건강</li>
+                  <li>웹툰</li>
+                  <li>게임</li>
+                  <li>티비</li>
+                  <li>TV연예</li>
+                  <li>뮤직</li>
+                  <li>영화</li>
+                  <li>책문화</li>
+                </ul>
+                <div class="opacity right"></div>
+              </div>
+              <button id="subject-prev">
+                <span class="blind">이전 주제</span>
+                <span></span>
+              </button>
+              <button id="subject-next">
+                <span class="blind">다음 주제</span>
+                <span></span>
+              </button>
+            </div>
+          </section>
+          <section id="main-shopping">
+            <h3 class="blind">쇼핑</h3>
+
+          </section>
+        </div>
+        <div id="main-fourth-block">
+          <section id="main-event">
+            <h3>이벤트</h3>
+          </section>
+          <section id="main-third-ad">
+            <h3 class="blind">광고</h3>
+          </section>
+        </div>
       </div>
-      <h2 class="blind">주제별개스트</h2>
-      <ul>
-        <li>엔터</li>
-        <li>스포츠</li>
-        <li>자동차</li>
-        <li>웹툰</li>
-        <li>경제M</li>
-        <li>추천구독</li>
-        <li>레시피</li>
-        <li>리빙</li>
-        <li>책방</li>
-        <li>패션뷰티</li>
-      </ul>
-      <div id="account">
-        <h2 class="blind">로그인</h2>
-        <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
-      </div>
-      <h2 class="blind">타임스퀘어</h2>
     </main>
 
     <footer>
+      <div id="footer-inner">
+       <div id="footer-ad"></div>
       <div class="notice_area">
         <div class="notice_box">
         <h3><a href="https://www.naver.com/NOTICE">공지사항</a></h3>
@@ -333,6 +247,7 @@
 
         </div>
       </div>
+    </div>
     </footer>
   </body>
 </html>
